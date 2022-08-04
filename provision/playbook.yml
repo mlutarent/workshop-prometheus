@@ -1,0 +1,27 @@
+- hosts: all
+  vars:
+    synced_folder: /home/vagrant/synced_folder
+    docker_users:
+      - vagrant
+
+  roles:
+    # Ansible role to install docker
+    # https://galaxy.ansible.com/geerlingguy/docker
+    - geerlingguy.docker
+
+  tasks:
+    - name: Fetching playgrounds
+      ansible.builtin.git:
+        repo: "{{ item.src }}"
+        dest: "{{ synced_folder }}/playgrounds/{{ item.name }}"
+      loop:
+          # Turnkey sandbox projects demonstrating a wide variety of Prometheus use cases
+        - src: https://github.com/prometheus-community/prometheus-playground.git
+          name: prometheus-community
+          # https://iximiuz.com/en/posts/prometheus-learning-promql/
+        - src: https://github.com/iximiuz/prometheus-playground.git
+          name: iximiuz
+          # A full docker based Prometheus / Grafana Environment to play around
+          # https://github.com/blndev/prometheus-playground
+        - src: https://github.com/blndev/prometheus-playground.git
+          name: blndev

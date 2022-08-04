@@ -1,0 +1,4 @@
+roles:
+    # Ansible role to install docker
+    # https://galaxy.ansible.com/geerlingguy/docker
+  - name: geerlingguy.docker
