@@ -1,7 +1,7 @@
 ## Prometheus
 ### Welches Problem will Prometheus loesen?
 
-### Architektur
+[Architektur](architecture.md)
 
 ### Playground: Basics
 

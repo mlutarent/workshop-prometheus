@@ -1,0 +1,18 @@
+third_party_playgrounds:
+  # Turnkey sandbox projects demonstrating a wide variety of Prometheus use cases
+  - src: https://github.com/prometheus-community/prometheus-playground.git
+    name: prometheus-community
+    # https://iximiuz.com/en/posts/prometheus-learning-promql/
+  - src: https://github.com/iximiuz/prometheus-playground.git
+    name: iximiuz
+  # https://github.com/dmuth/grafana-playground
+
+  # https://github.com/samber/workshop-prometheus-grafana
+  - src: https://github.com/samber/workshop-prometheus-grafana.git
+    name: samber
+
+    # Der folgende Playground ist buggy, daher auskommentiert
+    # A full docker based Prometheus / Grafana Environment to play around
+    # https://github.com/blndev/prometheus-playground
+    # - src: https://github.com/blndev/prometheus-playground.git
+    # name: blndev
