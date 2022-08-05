@@ -7,7 +7,7 @@
 
 ```shell
 # Start
-cd /home/vagrant/synced_folder/playgrounds/basics && docker-compose up -d
+cd /home/vagrant/playgrounds/basics && docker-compose up -d
 ```
 
 ```shell
@@ -19,7 +19,7 @@ curl 127.0.0.1:5000/metrics
 
 ```shell
 # clean up
-cd /home/vagrant/synced_folder/playgrounds/basics && docker-compose down
+cd /home/vagrant/playgrounds/basics && docker-compose down
 ```
 
 ### PromQL
