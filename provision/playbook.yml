@@ -14,7 +14,7 @@
       ansible.builtin.file:
         path: "{{ synced_folder }}/third_party"
         state: directory
-    - name: Fetching third party playgrounds
+    - name: Fetch third party playgrounds
       ansible.builtin.git:
         repo: "{{ item.src }}"
         dest: "{{ synced_folder }}/third_party/{{ item.name }}"

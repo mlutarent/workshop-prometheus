@@ -22,6 +22,10 @@ curl 127.0.0.1:5000/metrics
 cd /home/vagrant/playgrounds/basics && docker-compose down
 ```
 
+### What is a time series in Prometheus?
+
+![](https://iximiuz.com/prometheus-metrics-labels-time-series/time-series-2000-opt.png)
+
 ### PromQL
 
 ### Client Libraries: Beispiel Python
@@ -48,3 +52,57 @@ cd /home/vagrant/playgrounds/basics && docker-compose down
 > This is primarily useful for ad-hoc queries and debugging. For graphs, use Grafana or Console templates. [1]
 
 [1] https://prometheus.io/docs/visualization/browser/
+
+## Tested Third Party playgrounds
+
+### Simple Go app using the official prometheus client
+
+[Docs](https://github.com/prometheus-community/prometheus-playground/tree/master/go-app)
+
+```shell
+cd /home/vagrant/playgrounds/third_party/prometheus-community/go-app && make run
+```
+
+### Federation
+
+[Federation Docs](https://prometheus.io/docs/prometheus/latest/federation/)
+
+```shell
+cd /home/vagrant/playgrounds/third_party/prometheus-community/federation && make run
+```
+[http://localhost:9090/graph](http://localhost:9090/graph)
+
+
+### Google cadvisor
+
+[Google cadvisor - Analyzes resource usage and performance characteristics of running containers](https://github.com/google/cadvisor)
+
+```shell
+cd /home/vagrant/playgrounds/third_party/prometheus-community/cadvisor && make run
+```
+[http://localhost:9090/graph](http://localhost:9090/graph)
+
+> Some example metrics to explore:
+> 
+> rate(container_cpu_usage_seconds_total{name="redis"}[1m])
+> container_memory_usage_bytes{name="redis"}
+> rate(container_network_transmit_bytes_total[1m])
+> rate(container_network_receive_bytes_total[1m])
+
+### Alert Manager
+
+**Please note: The `amtool` service causes an error when running docker-compose. It's not strictly needed for the lab. Just comment it out in der docker-compose.yml**
+
+```shell
+cd /home/vagrant/playgrounds/third_party/prometheus-community/alertmanager && make run-detached
+```
+
+```shell
+docker-compose stop hello
+```
+
+```shell
+docker-compose logs webhook
+```
+
+[Alert Manager Dashboard](http://localhost:9093/)

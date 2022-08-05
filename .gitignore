@@ -1,3 +1,4 @@
 .vagrant
 *.log
 playgrounds/third_party
+!playgrounds/third_party/third_party.md
