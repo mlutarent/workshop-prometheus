@@ -2,6 +2,7 @@ groups:
 - name: node.rules
   rules:
   - alert: InstanceDown
+    # Where is the "up" from? See https://prometheus.io/docs/concepts/jobs_instances/#automatically-generated-labels-and-time-series
     expr: up{job="service-a"} == 0
     for: 10s
     labels:

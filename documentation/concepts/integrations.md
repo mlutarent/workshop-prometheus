@@ -1,7 +1,7 @@
-### Client Libraries: Beispiel Python
+### Client Libraries
 
 * [Prometheus Client Libs](https://prometheus.io/docs/instrumenting/clientlibs/)
-* [Flask integration](https://github.com/prometheus/client_python#flask)
+* [Example: Flask integration](https://github.com/prometheus/client_python#flask)
 
 ### Exporters and Integrations
 

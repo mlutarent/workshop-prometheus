@@ -10,5 +10,35 @@
 
 1) [Architecture](concepts/architecture.md)
 2) [Concepts](concepts/concepts.md)
+3) [Querying](concepts/querying.md)
 
-[🧰 Workshop: Basics](playgrounds/basics.md)
+[🧰 Playground: Basics](playgrounds/basics.md)
+
+## Grafana
+
+1) [Grafana](concepts/grafana.md)
+
+[🧰 Playground: Grafana](playgrounds/grafana.md)
+
+## Alerting
+
+1) [Alerting](concepts/alerting.md)
+
+[🧰 Playground: Alerting](playgrounds/alerting.md)
+
+## Integrations
+
+1) [Integrations](concepts/integrations.md)
+
+* [🧰 Playground: Simple Go App](playgrounds/third_party/simple_go_app.md)
+
+## Advanced
+
+### Third Party Playgrounds
+
+* [🧰 Playground: Google cadvisor](playgrounds/third_party/cadvisor.md)
+* [🧰 Playground: Federation](playgrounds/third_party/federation.md)
+
+### High Availability
+
+[High Availability](concepts/ha.md)

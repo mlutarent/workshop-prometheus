@@ -1,5 +1,9 @@
 # Prometheus/Grafana Workshop
 
+## Target Audience
+
+Devs and DevOps with no to intermediate experience with Prometheus/Grafana
+
 ## Requirements
 
 * [Vagrant](https://www.vagrantup.com/) (tested with Vagrant 2.2.19 on Ubuntu 20.04)
@@ -15,6 +19,6 @@ vagrant up
 vagrant ssh
 ```
 
-## Workshops
+## Overview
 
 [See overview](documentation/overview.md)
