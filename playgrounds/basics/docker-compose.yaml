@@ -1,20 +1,12 @@
 version: "3.9"
 services:
-  service-a:
-    build: ./service
-    hostname: service-a
-    environment:
-      FLASK_RUN_PORT: "5000"
-    ports:
-      - "5000:5000"
 
   prometheus:
     image: prom/prometheus:latest
     entrypoint:
       - "/bin/prometheus"
-      - "--config.file=/opt/prometheus/prometheus.yml"
-      - "--query.lookback-delta=15s"  # <-- testing shorter lookback duration
+      - "--config.file=/etc/prometheus/prometheus.yml"
     ports:
-      - "55055:9090"
+      - "9090:9090"
     volumes:
-      - ./prometheus.yml:/opt/prometheus/prometheus.yml
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml

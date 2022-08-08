@@ -11,4 +11,4 @@
 1) [Architecture](concepts/architecture.md)
 2) [Concepts](concepts/concepts.md)
 
-[🧰 Workshop: Basics](workshops/basics.md)
+[🧰 Workshop: Basics](playgrounds/basics.md)

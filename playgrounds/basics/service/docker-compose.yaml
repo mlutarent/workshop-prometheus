@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  service-a:
+    build: ./service
+    hostname: service-a
+    environment:
+      FLASK_RUN_PORT: "5000"
+      SERVICE_NAME: service-a
+    ports:
+      - "5000:5000"
+
+  service-b:
+    build: ./service
+    hostname: service-b
+    environment:
+      FLASK_RUN_PORT: "5001"
+      SERVICE_NAME: service-b
+    ports:
+      - "5001:5001"

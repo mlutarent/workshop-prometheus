@@ -1,10 +1,10 @@
-### Architektur
+# Architecture(s)
 
-#### Der Kern: Ein MVP-Setup
+## Simple Setup
 
 ![](https://prometheus.io/assets/tutorial/architecture.png)
 
-### Das Ökosystem
+## The ecosystem (at least a small part)
 
 ![](https://prometheus.io/assets/architecture.png)
 
