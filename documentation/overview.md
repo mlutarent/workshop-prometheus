@@ -31,6 +31,7 @@
 1) [Integrations](concepts/integrations.md)
 
 * [🧰 Playground: Simple Go App](playgrounds/third_party/simple_go_app.md)
+* [🧰 Playground: DB](playgrounds/db.md)
 
 ## Advanced
 
