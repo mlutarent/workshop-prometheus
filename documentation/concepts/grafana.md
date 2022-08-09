@@ -6,3 +6,6 @@
 > This is primarily useful for ad-hoc queries and debugging. For graphs, use Grafana or Console templates. [1]
 
 [1] https://prometheus.io/docs/visualization/browser/
+
+---
+[back](../overview.md)

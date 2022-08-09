@@ -2,11 +2,23 @@
 
 ## Simple Setup
 
+<details>
+<summary>Show / hide</summary>
+
 ![](https://prometheus.io/assets/tutorial/architecture.png)
 
-## The ecosystem (at least a small part)
+</details>
+
+## The slightly bigger picture
+
+<details>
+<summary>Show / hide</summary>
 
 ![](https://prometheus.io/assets/architecture.png)
 
+</details>
+
 ---
 [back](../overview.md)
+
+
