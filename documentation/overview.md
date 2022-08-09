@@ -51,6 +51,10 @@
 
 * [🔗 Recording rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/#recording-rules)
 
+### Kubernetes
+
+* [🔗 Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
+
 ### Third Party Playgrounds
 
 * [🧰 Playground: Google cadvisor](playgrounds/third_party/cadvisor.md)
