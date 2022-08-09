@@ -7,7 +7,7 @@ cd /home/vagrant/playgrounds/basics
 
 ```shell
 # Start
-docker-compose -f docker-compose.yaml -f shared/service/docker-compose.yaml up --remove-orphans
+docker-compose -f docker-compose.yaml -f ../shared/service/docker-compose.yaml up --remove-orphans
 ```
 
 * [Prometheus Dashboard](http://127.0.0.1:9090/graph)

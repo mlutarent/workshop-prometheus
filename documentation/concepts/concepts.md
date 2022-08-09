@@ -1,23 +1,62 @@
 ## Prometheus Data Model
 
-[📕 Data model](https://prometheus.io/docs/concepts/data_model/)
+`<metric name>{<label name>=<label value>, ...}`
+
+`api_http_requests_total{method="POST", handler="/messages"}`
+
+[🔗 Data model](https://prometheus.io/docs/concepts/data_model/)
 
 ### What is a time series in Prometheus?
 
+<details>
+<summary>Show / hide</summary>
+
 ![](https://iximiuz.com/prometheus-metrics-labels-time-series/time-series-2000-opt.png)
 
-### Read This
+</details>
+
+Read the excellent article/series [Prometheus Cheat Sheet - Basics (Metrics, Labels, Time Series, Scraping)](https://iximiuz.com/en/posts/prometheus-metrics-labels-time-series/) by Ivan Velichko
+
+## Prometheus Four Core Metric Types
+
+[🔗 Metric Types](https://prometheus.io/docs/concepts/metric_types/#metric-types)
 
 
+### Counter
 
-## Prometheus Metric Types
+A value that can only increase or be reset to zero on restart.
 
-* Counter
-* Gauge
-* Histogram
-* Summary
+Use cases:
+* number of requests served
+* number of tasks completed
+* number of errors
 
-[📕 Metric Types](https://prometheus.io/docs/concepts/metric_types/#metric-types)
+### Gauge
+
+A single numerical value that can arbitrarily go up and down.
+
+Use cases:
+* memory/cpu usage
+* number of concurrent requests
+* ...
+
+### Histogram
+
+A histogram samples observations and counts them in configurable buckets. 
+It also provides a sum of all observed values.
+
+Use cases:
+* request durations
+* response sizes
+* ...
+
+### Summary
+
+* using it is discouraged; histograms should be used instead in most scenarios
+* like Histograms when you don't know the bucket size beforehand
+
+Uses cases:
+* similar to histograms
 
 ## Prometheus Jobs and Instances
 
@@ -36,7 +75,7 @@ For each instance scrape, Prometheus stores a sample in the following time serie
 
 The *up* time series is useful for instance availability monitoring.
 
-[📕 Jobs and instances](https://prometheus.io/docs/concepts/jobs_instances/#jobs-and-instances)
+[🔗 Jobs and instances](https://prometheus.io/docs/concepts/jobs_instances/#jobs-and-instances)
 
 ---
 [back](../overview.md)

@@ -13,3 +13,6 @@ cd /home/vagrant/playgrounds/third_party/prometheus-community/cadvisor && make r
 > container_memory_usage_bytes{name="redis"}
 > rate(container_network_transmit_bytes_total[1m])
 > rate(container_network_receive_bytes_total[1m])
+
+---
+[back](../../overview.md)

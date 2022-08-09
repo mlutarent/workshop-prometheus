@@ -7,3 +7,5 @@ cd /home/vagrant/playgrounds/third_party/prometheus-community/federation && make
 ```
 [http://localhost:9090/graph](http://localhost:9090/graph)
 
+---
+[back](../../overview.md)

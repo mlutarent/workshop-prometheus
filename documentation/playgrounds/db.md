@@ -1,7 +1,8 @@
 # DB integration example
 
-Running Postgres with [PostgreSQL Server Exporter](https://github.com/prometheus-community/postgres_exporter) to expose metrics.
-Importing a [preconfigured dashboard](https://grafana.com/grafana/dashboards/9628 ) into Grafana
+Goals: 
+* Running Postgres with [PostgreSQL Server Exporter](https://github.com/prometheus-community/postgres_exporter) to expose metrics.
+* Importing a [preconfigured dashboard](https://grafana.com/grafana/dashboards/9628 ) into Grafana
 
 ```shell
 cd /home/vagrant/playgrounds/db
