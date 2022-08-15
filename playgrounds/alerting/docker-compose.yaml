@@ -6,7 +6,7 @@ services:
     command:
       - --config.file=/etc/alertmanager/alertmanager.yml
     volumes:
-      - ./alerting/alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
+      - ./alertmanager/alertmanager.yml:/etc/alertmanager/alertmanager.yml:ro
 
   prometheus:
     image: prom/prometheus:latest
@@ -16,7 +16,7 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./alerting/prometheus:/etc/prometheus:ro
+      - ./prometheus:/etc/prometheus:ro
 
   mail:
     image: mailhog/mailhog
