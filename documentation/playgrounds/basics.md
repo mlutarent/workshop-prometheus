@@ -51,11 +51,11 @@ cd /home/vagrant/playgrounds/basics
 
 </details>
 
----
-[back](../overview.md)
-
 ## Things to do with this playground
 
 * Watch the metrics the services are exposing
 * Investigate where you can see the configured targets on the Prometheus dashboard
 * Run a simple query on the Prometheus Dashboard (example `http_requests_total{}`)
+
+---
+[back](../overview.md)

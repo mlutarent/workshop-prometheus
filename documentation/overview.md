@@ -6,20 +6,15 @@
 
 ## What Problem does Prometheus try to solve?
 
-    From metrics to insight
-
-    Power your metrics and alerting with the leading
-    open-source monitoring solution. [1] 
-
-    [1] https://prometheus.io/
-
-* [🔗 Main Features](https://prometheus.io/docs/introduction/overview/#features)
+* [📕 Features](concepts/features.md)
 
 ## How does Prometheus try to solve the Problem?
 
-* [📕 Architecture](concepts/architecture.md)
 * [🧰 Playground: Basics](playgrounds/basics.md)
-* [📕 Concepts](concepts/concepts.md)
+* [📕 Architecture](concepts/architecture.md)
+* [📕 Data Model](concepts/data_model.md)
+* [📕 Metric Types](concepts/metric_types.md)
+* [📕 Jobs and Instances](concepts/jobs_instances.md)
 * [📕 Querying](concepts/querying.md)
 
 ## Grafana
@@ -44,6 +39,12 @@
 * [🔗 When does it not fit?](https://prometheus.io/docs/introduction/overview/#when-does-it-not-fit)
 
 ## Advanced topics
+
+### Pushing Metrics
+
+> Occasionally you will need to monitor components which cannot be scraped. The Prometheus Pushgateway allows you to push time series from short-lived service-level batch jobs to an intermediary job which Prometheus can scrape. Combined with Prometheus's simple text-based exposition format, this makes it easy to instrument even shell scripts without a client library.
+
+[Pushing Metrics](https://prometheus.io/docs/instrumenting/pushing/)
 
 ### Recording Rules
 
