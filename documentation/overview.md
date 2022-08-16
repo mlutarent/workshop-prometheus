@@ -38,15 +38,25 @@
 
 ### Pushing Metrics
 
+<details>
+<summary>Show / hide</summary>
+
 > Occasionally you will need to monitor components which cannot be scraped. The Prometheus Pushgateway allows you to push time series from short-lived service-level batch jobs to an intermediary job which Prometheus can scrape. Combined with Prometheus's simple text-based exposition format, this makes it easy to instrument even shell scripts without a client library.
 
-[Pushing Metrics](https://prometheus.io/docs/instrumenting/pushing/)
+* [🔗 Pushing Metrics](https://prometheus.io/docs/instrumenting/pushing/)
+
+</details>
 
 ### Recording Rules
+
+<details>
+<summary>Show / hide</summary>
 
 > Recording rules allow you to precompute frequently needed or computationally expensive expressions and save their result as a new set of time series. Querying the precomputed result will then often be much faster than executing the original expression every time it is needed.
 
 * [🔗 Recording rules](https://prometheus.io/docs/prometheus/latest/configuration/recording_rules/#recording-rules)
+
+</details>
 
 ### Kubernetes
 
