@@ -1,11 +1,13 @@
 # Alert Manager
 
-
 ## Components
 
-* the same components as in the [basics playground](./basics.md)
-* an Alert Manager instance
+* the same components as in the [basics playground](./basics.md) plus
   * [docker-compose.yaml](../../playgrounds/alerting/docker-compose.yaml)
+  * [prometheus.yml](../../playgrounds/alerting/prometheus/prometheus.yml)
+  * [alert.rules](../../playgrounds/alerting/prometheus/alert.rules)
+* an Alert Manager instance
+  * [alertmanager.yml](../../playgrounds/alerting/alertmanager/alertmanager.yml)
 * a Webmailer instance
 
 ## Run playground

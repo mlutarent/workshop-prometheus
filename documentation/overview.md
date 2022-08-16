@@ -33,10 +33,6 @@
 * [🧰 Playground: Simple Go App](playgrounds/third_party/simple_go_app.md)
 * [🧰 Playground: DB](playgrounds/db.md)
 
-## When does Prometheus fit? When does it not?
-
-* [🔗 When does it fit?](https://prometheus.io/docs/introduction/overview/#when-does-it-fit)
-* [🔗 When does it not fit?](https://prometheus.io/docs/introduction/overview/#when-does-it-not-fit)
 
 ## Advanced topics
 

@@ -11,6 +11,12 @@
     - geerlingguy.docker
 
   tasks:
+    - name: Install packages on guest
+      ansible.builtin.apt:
+        name: "{{ item }}"
+        update_cache: yes
+      loop:
+        - make
     - name: Create third party playground directory
       ansible.builtin.file:
         path: "{{ synced_folder }}/third_party"

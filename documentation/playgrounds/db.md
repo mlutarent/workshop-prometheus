@@ -1,21 +1,30 @@
-# DB integration example
+# Exporter: DB integration example
 
-Goals: 
-* Running Postgres with [PostgreSQL Server Exporter](https://github.com/prometheus-community/postgres_exporter) to expose metrics.
-* Importing a [preconfigured dashboard](https://grafana.com/grafana/dashboards/9628 ) into Grafana
+## Components
+
+* Postgres instance with [PostgreSQL Server Exporter](https://github.com/prometheus-community/postgres_exporter) to expose metrics.
+
+## Run playground
 
 ```shell
 cd /home/vagrant/playgrounds/db
 ```
 
 ```shell
-docker-compose up
+./run.sh
 ```
 
 * [Prometheus Dashboard](http://127.0.0.1:9090/graph)
-* [Postgres Exporter Metrics](http://127.0.0.1:9093/metrics)
-* Go to [Dashboards -> Import dashboard](http://127.0.0.1:3000/dashboard/import) (Default username/password: *admin/admin*)
+
 * Paste `https://grafana.com/grafana/dashboards/9628` into field "URL"
+
+## Things to do with this playground
+* Check out the [Postgres Exporter Metrics](http://127.0.0.1:9093/metrics)
+* Import a [preconfigured dashboard](https://grafana.com/grafana/dashboards/9628 ) into Grafana
+  * Add prometheus as [Data Source ](http://127.0.0.1:3000/datasources)
+    * http://prometheus:9090
+  * Go to [Dashboards -> Import dashboard](http://127.0.0.1:3000/dashboard/import) 
+    * (username: admin,  password: admin)
 
 ---
 [back](../overview.md)

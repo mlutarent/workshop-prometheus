@@ -18,7 +18,8 @@ cd /home/vagrant/playgrounds/grafana
 
 ## What have we got?
 
-* [Grafana Dashboard](http://127.0.0.1:3000) (username: admin,  password: admin)
+* [Grafana Dashboard](http://127.0.0.1:3000)
+  * (username: admin,  password: admin)
 
 <details>
 <summary>Show / hide</summary>
