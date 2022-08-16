@@ -2,8 +2,9 @@
 
 ## Components
 
-* two minimal webservices (Service A, Service B) that expose `GET /metrics`
+* two simple Flask webservices (Service A, Service B) that expose `GET /metrics`
   * [service.py](../../playgrounds/shared/service/service.py)
+  * [docker-compose.yaml](../../playgrounds/shared/service/docker-compose.yaml)
 * a Prometheus instance that is configured to scrape both `/metrics` endpoints
   * [docker-compose.yaml](../../playgrounds/basics/docker-compose.yaml)
   * [prometheus.yml](../../playgrounds/basics/prometheus.yml)

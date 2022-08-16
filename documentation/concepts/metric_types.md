@@ -80,8 +80,8 @@ prometheus_tsdb_compaction_chunk_range_seconds_count 0
 
 ## Summary
 
-* using it is discouraged; histograms should be used instead in most scenarios
 * like Histograms when you don't know the bucket size beforehand
+* see [Histograms and Summaries](https://prometheus.io/docs/practices/histograms/)
 
 Uses cases:
 * similar to histograms
