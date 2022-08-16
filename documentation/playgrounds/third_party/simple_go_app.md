@@ -8,9 +8,7 @@
 
 ```shell
 cd /home/vagrant/playgrounds/third_party/prometheus-community/go-app
-```
 
-```shell
 make run-detached
 ```
 

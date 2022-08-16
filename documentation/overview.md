@@ -62,11 +62,6 @@
 
 * [🔗 Prometheus Operator](https://github.com/prometheus-operator/prometheus-operator)
 
-### Third Party Playgrounds
-
-* [🧰 Playground: Google cadvisor](playgrounds/third_party/cadvisor.md)
-* [🧰 Playground: Federation](playgrounds/third_party/federation.md)
-
 ### High Availability
 
 * [📕 High Availability](concepts/ha.md)
