@@ -60,35 +60,38 @@ For querying: Uses the [histogram_quantile function](https://prometheus.io/docs/
 Example: Histogram metrics exposed by a Prometheus instance:
 
 ```shell
-# HELP prometheus_tsdb_compaction_chunk_range_seconds Final time range of chunks on their first compaction
-# TYPE prometheus_tsdb_compaction_chunk_range_seconds histogram
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="100"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="400"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="1600"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="6400"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="25600"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="102400"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="409600"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="1.6384e+06"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="6.5536e+06"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="2.62144e+07"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_bucket{le="+Inf"} 0
-prometheus_tsdb_compaction_chunk_range_seconds_sum 0
-prometheus_tsdb_compaction_chunk_range_seconds_count 0
+# HELP prometheus_http_request_duration_seconds Histogram of latencies for HTTP requests.
+# TYPE prometheus_http_request_duration_seconds histogram
+prometheus_http_request_duration_seconds_bucket{handler="/",le="0.1"} 25547
+prometheus_http_request_duration_seconds_bucket{handler="/",le="0.2"} 26688
+prometheus_http_request_duration_seconds_bucket{handler="/",le="0.4"} 27760
+prometheus_http_request_duration_seconds_bucket{handler="/",le="1"} 28641
+prometheus_http_request_duration_seconds_bucket{handler="/",le="3"} 28782
+prometheus_http_request_duration_seconds_bucket{handler="/",le="8"} 28844
+prometheus_http_request_duration_seconds_bucket{handler="/",le="20"} 28855
+prometheus_http_request_duration_seconds_bucket{handler="/",le="60"} 28860
+prometheus_http_request_duration_seconds_bucket{handler="/",le="120"} 28860
+prometheus_http_request_duration_seconds_bucket{handler="/",le="+Inf"} 28860
+prometheus_http_request_duration_seconds_sum{handler="/"} 1863.80491025699
+prometheus_http_request_duration_seconds_count{handler="/"} 28860
 ```
 
 </details>
+
+* [How to visualize Prometheus histograms in Grafana](https://grafana.com/blog/2020/06/23/how-to-visualize-prometheus-histograms-in-grafana/)
 
 
 ## Summary
 
 * like Histograms when you don't know the bucket size beforehand
-* see [Histograms and Summaries](https://prometheus.io/docs/practices/histograms/)
 
 Uses cases:
 * similar to histograms
 
 What's the difference ?
+
+* see [Histograms and Summaries](https://prometheus.io/docs/practices/histograms/)
+
 
 <details>
 <summary>Show / hide</summary>

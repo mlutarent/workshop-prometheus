@@ -1,8 +1,5 @@
 # Grafana
 
-> The open observability platform
-> Operational dashboards for your data here, there, or anywhere
-
 * [**Grafana Labs**](https://grafana.com/)
   * *"The open observability platform"*
 * [**Grafana**](https://grafana.com/grafana/)
