@@ -52,6 +52,8 @@ Use cases:
 * response sizes
 * ...
 
+For querying: Uses the [histogram_quantile function](https://prometheus.io/docs/prometheus/latest/querying/functions/#histogram_quantile)
+
 <details>
 <summary>Show / hide</summary>
 
@@ -85,6 +87,8 @@ prometheus_tsdb_compaction_chunk_range_seconds_count 0
 
 Uses cases:
 * similar to histograms
+
+What's the difference ?
 
 <details>
 <summary>Show / hide</summary>

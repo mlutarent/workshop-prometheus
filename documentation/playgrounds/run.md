@@ -1,8 +1,7 @@
 # Requirements to run the playgrounds
 
-* [Vagrant](https://www.vagrantup.com/) *
-
-**(tested with Vagrant 2.2.19 using Virtualbox 6.1 on Ubuntu 20.04)*
+* [Vagrant](https://www.vagrantup.com/)
+  * *(tested with Vagrant 2.2.19 using Virtualbox 6.1 on Ubuntu 20.04)*
 
 ## Run
 

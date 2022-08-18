@@ -4,11 +4,11 @@
 
 ## Structure
 
-`<metric name>{<label name>=<label value>, ...}`
+`<metric name>{<label name>=<label value>, ...} sample`
 
 ## Example
 
-`api_http_requests_total{method="POST", handler="/messages"}`
+`api_http_requests_total{method="POST", handler="/messages"} 123`
 
 [🔗 Data model](https://prometheus.io/docs/concepts/data_model/)
 
